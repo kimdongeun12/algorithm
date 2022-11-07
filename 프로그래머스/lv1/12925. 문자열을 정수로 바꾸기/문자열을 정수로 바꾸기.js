@@ -1,4 +1,4 @@
 function solution(s) {
-    var answer = Number(s);
+    const answer = Number(s);
     return answer;
 }
