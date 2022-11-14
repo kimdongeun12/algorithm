@@ -9,5 +9,6 @@ function solution(s){
             yCnt++
         }
     })
-    return pCnt !== yCnt ? false : true;
+    
+    return pCnt === yCnt
 }
