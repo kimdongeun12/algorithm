@@ -4,5 +4,5 @@ function solution(x) {
     return Number(acc)+Number(cur)
   })
   
-  return x % sum ===0 ? true : false;
+  return x % sum ===0
 }
