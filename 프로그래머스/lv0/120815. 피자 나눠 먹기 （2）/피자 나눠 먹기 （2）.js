@@ -1,8 +1,7 @@
 function solution(n) {
-    let answer = 1;
-    let pizza = 6;
-    while((pizza * answer) % n !== 0) {
-        answer++;
+    let pizza = 1;
+    while((6 * pizza) % n !== 0) {
+        pizza++;
     }
-    return answer;
+    return pizza;
 }
