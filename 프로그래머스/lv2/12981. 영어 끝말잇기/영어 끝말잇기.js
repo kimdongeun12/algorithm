@@ -10,12 +10,7 @@ const solution = (n, words) => {
     turn = (cnt % n) + 1;
     cnt++;
     if(!!lastWord) {
-      if(filter.length > 0) {
-        answer[0] = turn;
-        answer[1] = Math.ceil(cnt / n);
-        break
-      }
-      if(lastWord[lastWord.length - 1] !== word[0]){
+      if(filter.length > 0 || lastWord[lastWord.length - 1] !== word[0]) {
         answer[0] = turn;
         answer[1] = Math.ceil(cnt / n);
         break
